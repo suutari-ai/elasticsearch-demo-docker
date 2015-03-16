@@ -22,3 +22,9 @@ RUN \
 
 RUN \
  /usr/share/elasticsearch/bin/plugin -install mobz/elasticsearch-head
+
+CMD \
+ service nginx start && service elasticsearch-es-01 start && \
+ tail -f /var/log/elasticsearch/es-01/es_demo.log
+
+EXPOSE 80 5200 9200 9300
