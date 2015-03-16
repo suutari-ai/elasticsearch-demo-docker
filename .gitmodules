@@ -1,0 +1,3 @@
+[submodule "es-demo"]
+	path = es-demo
+	url = git@github.com:elasticsearch/demo.git
